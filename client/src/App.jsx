@@ -13,6 +13,8 @@ import Product from "./pages/Product";
 import Counter from "./components/Counter";
 import Path from "./components/Path";
 import PathName from "./components/PathName";
+import News from "./pages/News";
+import GetNews from "./pages/GetNews";
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
       <PathName />
       <Routes>
         <Route path="/test/:id" element={<Path />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/get" element={<GetNews />} />
       </Routes>
       {/* 
       <Sidebar />

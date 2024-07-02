@@ -1,10 +1,11 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 const Path = () => {
-  const location = useLocation();
+  const { id } = useParams();
+  // const location = useLocation();
 
-  const id = location.pathname.split("/").at(-1);
+  // const id = location.pathname.split("/").at(-1);
   return <div>id: {id}</div>;
 };
 

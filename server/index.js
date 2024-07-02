@@ -41,6 +41,7 @@ app.use(
 app.use("/api/v1/auth", require("./routes/authRoute"))
 app.use("/api/v1/product", require("./routes/products"))
 app.use("/api/v1/image", require("./routes/imageRoute"))
+app.use("/api/v1/news", require("./routes/news"))
 
 app.get("/", (req, res) => {
     res.status(200).json({

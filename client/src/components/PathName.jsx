@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const data = [{ id: "skd3uuhe4444", name: "test" }];
+const data = [{ id: "Kaisa laga mera majak", name: "test" }];
 
 const PathName = () => {
   return (
