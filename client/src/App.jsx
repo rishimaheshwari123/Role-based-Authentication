@@ -15,6 +15,7 @@ import Path from "./components/Path";
 import PathName from "./components/PathName";
 import News from "./pages/News";
 import GetNews from "./pages/GetNews";
+import Category from "./pages/Category";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/test/:id" element={<Path />} />
         <Route path="/news" element={<News />} />
         <Route path="/get" element={<GetNews />} />
+        <Route path="/getCat" element={<Category />} />
       </Routes>
       {/* 
       <Sidebar />
