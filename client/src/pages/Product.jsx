@@ -28,14 +28,18 @@ const Product = () => {
   };
 
   const handleDelete = async (id) => {
+    setLoading(true);
     try {
       const response = await axios.delete(
         `${process.env.REACT_APP_BACKEND_URL}/product/delete/${id}`
       );
+      setLoading(false);
       if (response?.data?.success) {
         setProducts(products.filter((currElem) => currElem._id !== id));
       }
     } catch (error) {
+      setLoading(false);
+
       console.log(error);
     }
   };

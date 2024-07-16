@@ -9,7 +9,6 @@ const createProduct = async (req, res) => {
 
     const imagesArray = JSON.parse(req.body.images);
 
-
     if (
       !title ||
       !description ||

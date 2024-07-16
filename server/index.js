@@ -43,6 +43,7 @@ app.use("/api/v1/product", require("./routes/products"))
 app.use("/api/v1/image", require("./routes/imageRoute"))
 app.use("/api/v1/news", require("./routes/news"))
 app.use("/api/v1/category", require("./routes/category"))
+app.use("/api/v1/post", require("./routes/postRoute"))
 
 app.get("/", (req, res) => {
     res.status(200).json({

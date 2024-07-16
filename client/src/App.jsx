@@ -16,17 +16,22 @@ import PathName from "./components/PathName";
 import News from "./pages/News";
 import GetNews from "./pages/GetNews";
 import Category from "./pages/Category";
+import Post from "./pages/Post";
+import SinglePost from "./pages/SinglePost";
 
 const App = () => {
   return (
     <div className="flex gap-5">
-      <Counter />
-      <PathName />
+      {/* <Counter />
+      <PathName /> */}
       <Routes>
         <Route path="/test/:id" element={<Path />} />
         <Route path="/news" element={<News />} />
         <Route path="/get" element={<GetNews />} />
         <Route path="/getCat" element={<Category />} />
+        <Route path="/products" element={<Product />} />
+        <Route path="/post" element={<Post />} />
+        <Route path="/singlePost/:id" element={<SinglePost />} />
       </Routes>
       {/* 
       <Sidebar />
@@ -35,7 +40,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/products" element={<Product />} />
     */}
       {/* Add other routes here 
           <Route path="/admin" element={<Admin />}>
